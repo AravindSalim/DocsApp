@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patient_bg"
+    tools:context=".Patient_Login">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/patient_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_email_black_24dp"
+                        android:tint="@color/colorAccent" />
+
+                    <EditText
+                        android:id="@+id/patient_email_for_sign_in"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:hint="UserName"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_lock_black_24dp"
+                        android:tint="@color/colorAccent" />
+
+                    <EditText
+                        android:id="@+id/patient_pass_for_sign_in"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/patient_sign_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff"
+                    android:text="Sign In"
+                    android:textColor="@color/colorAccent"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/patient_sign_up_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffff"
+                    android:text="Sign Up"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="104dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/patient_icon" />
+
+
+</android.support.constraint.ConstraintLayout>

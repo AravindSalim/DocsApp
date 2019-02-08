@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DocApp</string>
+    <string name="patient">Patient_png</string>
+    <string name="doctor">Doctor_png</string>
+    <string name="Icon">DoctorAppIcon</string>
+    <string name="HomeScreenText">DocApp</string>
+</resources>

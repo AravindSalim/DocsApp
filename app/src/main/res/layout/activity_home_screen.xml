@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_bg"
+    tools:context=".HomeScreen">
+
+
+    <ImageButton
+        android:id="@+id/patient"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/patient"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:srcCompat="@drawable/patient"
+        android:paddingEnd="25dp"/>
+
+    <ImageButton
+        android:id="@+id/doctor"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/patient"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="139dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/doctor"
+        app:srcCompat="@drawable/doctor" />
+
+    <TextView
+        android:id="@+id/patient_button_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lobster"
+        android:text="Patient"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/patient_button_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-139dp"
+        android:fontFamily="@font/lobster"
+        android:text="Doctor"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
