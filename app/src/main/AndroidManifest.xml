@@ -23,11 +23,12 @@
         <activity android:name=".Patient_Login" />
         <activity android:name=".Patient_SignUp" />
         <activity android:name=".Doctor_Login" />
-        <activity android:name=".DoctorSignUp"></activity>
+        <activity android:name=".DoctorSignUp" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

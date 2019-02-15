@@ -17,10 +17,10 @@
         android:layout_marginTop="153dp"
         android:background="@drawable/button_background"
         android:contentDescription="@string/patient"
+        android:paddingEnd="25dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        app:srcCompat="@drawable/patient"
-        android:paddingEnd="25dp"/>
+        app:srcCompat="@drawable/patient" />
 
     <ImageButton
         android:id="@+id/doctor"

@@ -10,112 +10,95 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="403dp"
+        android:layout_height="413dp"
         android:layout_marginBottom="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-        <ScrollView
+
+        <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:gravity="center">
+
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
 
             <LinearLayout
-
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="7dp">
 
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:tint="@color/colorAccent" />
 
-
-                <TextView
-                    android:id="@+id/patient_heading"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:textAlignment="center"
-                    android:textColor="#ffff"
-                    android:textSize="34sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal"
-                    android:padding="7dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_email_black_24dp"
-                        android:tint="@color/colorAccent" />
-
-                    <EditText
-                        android:id="@+id/patient_email_for_sign_in"
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="3"
-                        android:hint="UserName"
-                        android:inputType="textEmailAddress"
-                        android:textColorHint="@color/colorPrimaryDark" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal"
-                    android:padding="7dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_lock_black_24dp"
-                        android:tint="@color/colorAccent" />
-
-                    <EditText
-                        android:id="@+id/patient_pass_for_sign_in"
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="3"
-                        android:hint="Password"
-                        android:inputType="textPassword"
-                        android:textColorHint="@color/colorPrimary" />
-
-                </LinearLayout>
-
-
-                <Button
-                    android:id="@+id/patient_sign_in_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:background="#ffff"
-                    android:text="Sign In"
-                    android:textColor="@color/colorAccent"
-
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/patient_sign_up_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:background="#ffff"
-                    android:text="Sign Up"
-                    android:textColor="@color/colorAccent"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/patient_email_for_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/colorPrimaryDark" />
 
             </LinearLayout>
 
-        </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/patient_pass_for_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/patient_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#ffff"
+                android:text="Sign In"
+                android:textColor="@color/colorAccent"
+
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/patient_sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#ffff"
+                android:text="Sign Up"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 

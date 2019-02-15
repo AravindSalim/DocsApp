@@ -95,31 +95,6 @@
                 android:padding="7dp"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:tint="#ffff"
-                    android:src="@drawable/ic_lock_black_24dp"/>
-
-                <EditText
-                    android:id="@+id/confirm_pass_for_sign_up"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:hint="Confirm Password"
-                    android:textColorHint="@color/colorAccent"
-                    android:inputType="textPassword"
-                    android:layout_weight="3"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:padding="7dp"
-                android:orientation="horizontal">
-
             </LinearLayout>
 
             <Button
