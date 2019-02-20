@@ -13,13 +13,13 @@
         android:layout_height="413dp"
         android:layout_marginBottom="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
 
 
         <LinearLayout
 
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp">
@@ -44,7 +44,7 @@
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="3"
-                    android:hint="email"
+                    android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:textColorHint="@color/colorPrimaryDark" />
 
@@ -84,8 +84,8 @@
                 android:background="#ffff"
                 android:text="Sign In"
                 android:textColor="@color/colorAccent"
-
                 android:textStyle="bold" />
+
 
             <Button
                 android:id="@+id/patient_sign_up_button"
@@ -97,7 +97,17 @@
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/forg_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="210dp"
+                android:text="Forgot Password..?"
+                android:textSize="19dp" />
+
         </LinearLayout>
+
+
 
 
     </RelativeLayout>
@@ -115,6 +125,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/patient_icon" />
-
 
 </android.support.constraint.ConstraintLayout>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,6 +20,7 @@ public class Patient_Login extends AppCompatActivity {
     FirebaseAuth mAuth;
       Button patient_register,Log_In ;
       EditText email_sign_in,password_sign_in;
+      TextView forgot_password;
 
 
     @Override
@@ -35,6 +37,7 @@ public class Patient_Login extends AppCompatActivity {
         email_sign_in = (EditText)findViewById(R.id.patient_email_for_sign_in);
         password_sign_in = (EditText)findViewById(R.id.patient_pass_for_sign_in);
         Log_In = (Button)findViewById(R.id.patient_sign_in_button);
+        forgot_password = (TextView)findViewById(R.id.forg_password);
         mAuth = FirebaseAuth.getInstance();
         Log_In.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +45,14 @@ public class Patient_Login extends AppCompatActivity {
                 login_function();
             }
         });
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Reset_password.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void login_function() {
